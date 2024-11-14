@@ -21,7 +21,6 @@ create or replace trigger pension_trigger after update of emp_retires on  salari
 /
 
 
-
 declare
 	cursor work_cur is 
 		select * from salaried_worker;
@@ -58,3 +57,4 @@ select * from salaried_worker;
 select * from pension;
 drop table pension;
 drop table salaried_worker;
+drop table address;
